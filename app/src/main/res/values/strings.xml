@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Eletric car app</string>
+    <string name="title">Eletric Car</string>
+    <string name="cars">CARS</string>
+    <string name="favorites">FAVORITES</string>
+    <string name="car_name">Volvo XC40</string>
+    <string name="price">Price</string>
+    <string name="battery">Battery</string>
+    <string name="power">Power</string>
+    <string name="recharge">Recharge</string>
+    <string name="kwh_price">kWh price</string>
+    <string name="km_traveled">km traveled</string>
+    <string name="calculate">CALCULATE</string>
+
+</resources>

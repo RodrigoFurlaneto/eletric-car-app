@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_eletric_car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/title"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_cars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/cars"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tv_favorite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_eletric_car" />
+
+    <TextView
+        android:id="@+id/tv_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/favorites"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_cars"
+        app:layout_constraintTop_toTopOf="@+id/tv_cars" />
+
+    <ImageView
+        android:id="@+id/iv_eletric_car"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cars"
+        app:srcCompat="@drawable/elitric_car" />
+
+    <TextView
+        android:id="@+id/tv_car_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-40dp"
+        android:text="@string/car_name"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/iv_eletric_car"
+        app:layout_constraintStart_toStartOf="@+id/iv_eletric_car"
+        app:layout_constraintTop_toBottomOf="@+id/iv_eletric_car" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/price"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/iv_eletric_car"
+        app:layout_constraintTop_toBottomOf="@id/iv_eletric_car" />
+
+    <TextView
+        android:id="@+id/tv_price_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$34,100.00"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/iv_eletric_car"
+        app:layout_constraintTop_toBottomOf="@id/iv_eletric_car" />
+
+    <TextView
+        android:id="@+id/tv_battery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/battery"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tv_price"
+        app:layout_constraintTop_toBottomOf="@id/tv_price" />
+
+    <TextView
+        android:id="@+id/tv_battery_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="67 kWh"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/iv_eletric_car"
+        app:layout_constraintTop_toBottomOf="@id/tv_price_value" />
+
+    <TextView
+        android:id="@+id/tv_power"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/power"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tv_price"
+        app:layout_constraintTop_toBottomOf="@id/tv_battery" />
+
+    <TextView
+        android:id="@+id/tv_power_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="231 cv"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/iv_eletric_car"
+        app:layout_constraintTop_toBottomOf="@id/tv_battery_value" />
+
+    <TextView
+        android:id="@+id/tv_recharge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/recharge"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tv_price"
+        app:layout_constraintTop_toBottomOf="@id/tv_power" />
+
+    <TextView
+        android:id="@+id/tv_recharge_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="36 to 42h"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/iv_eletric_car"
+        app:layout_constraintTop_toBottomOf="@id/tv_power_value" />
+
+    <EditText
+        android:id="@+id/et_kwh_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+        android:hint="@string/kwh_price"
+        android:inputType="numberDecimal"
+        android:maxLength="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_recharge" />
+
+    <EditText
+        android:id="@+id/et_km_traveled"
+        android:layout_width="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/km_traveled"
+        android:maxLength="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/et_kwh_price"
+        app:layout_constraintTop_toBottomOf="@+id/et_kwh_price"
+        app:layout_constraintEnd_toEndOf="@+id/et_kwh_price"
+        />
+
+    <Button
+        android:id="@+id/bt_calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/calculate"
+        app:layout_constraintStart_toStartOf="@+id/et_km_traveled"
+        app:layout_constraintTop_toBottomOf="@+id/et_km_traveled"
+        />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/bt_calculate"
+        app:layout_constraintTop_toBottomOf="@id/bt_calculate"
+        android:visibility="invisible"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
